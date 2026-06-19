@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishabh Mehrotra - Portfolio</title>
+    <title>Rishabh Mehrotra — Software Developer & Portfolio</title>
+    <meta name="description" content="Rishabh Mehrotra — Full-Stack Developer specialising in Next.js, React, Node.js, and AI-powered applications. View projects, skills, and get in touch.">
+    <meta property="og:title" content="Rishabh Mehrotra — Software Developer">
+    <meta property="og:description" content="Full-Stack Developer crafting scalable web apps and AI-powered solutions.">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
@@ -15,12 +19,12 @@
     <div class="followCursor"></div>
     <div class="main">
 
+        <!-- LOADER -->
         <div id="blackLoader">
             <div id="topHeading">
                 <h5 class="reveal">Design Portfolio</h5>
-                <h5 class="reveal">&copy; 2024</h5>
+                <h5 class="reveal">© <span id="year"></span></h5>
             </div>
-
             <h1 class="reveal">
                 <span>Rishabh </span>
                 <span class="surname">Mehrotra</span>
@@ -28,29 +32,37 @@
                 <span>a</span>
             </h1>
         </div>
-
         <div id="greenLoader"></div>
 
+        <!-- HOME -->
         <div id="home">
-
-            <div id="nav">
-                <a href="#">Rishabh
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
+            <nav id="nav">
+                <a target="_blank" href="https://leetcode.com/u/mehrotrarishabh100/">LeetCode
+                    <span class="line line-left"></span>
+                    <span class="line line-right"></span>
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/rishabhmehrotra-/">LinkedIn
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
+                <a target="_blank" href="https://www.linkedin.com/in/rishabhmehrotra11/">LinkedIn
+                    <span class="line line-left"></span>
+                    <span class="line line-right"></span>
                 </a>
                 <a target="_blank" href="https://github.com/rish2311">GitHub
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
+                    <span class="line line-left"></span>
+                    <span class="line line-right"></span>
                 </a>
-                <a target="_blank" href="./img/Resume.pdf">Resume
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
+                <a target="_blank" href="https://drive.google.com/file/d/1LYhHqdBUYBf2uS-0k3tlv3fCGPVkld0e/view?usp=sharing">Resume
+                    <span class="line line-left"></span>
+                    <span class="line line-right"></span>
                 </a>
-            </div>
+                <!-- Dark / Light mode toggle -->
+                <button id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+            </nav>
 
             <div class="row">
                 <h1 class="reveal head1">Software</h1>
@@ -161,26 +173,24 @@
                 </div>
                 <h1 class="reveal head2">Developer</h1>
             </div>
-
         </div>
 
+        <!-- ABOUT -->
         <div id="about">
             <div class="aboutLeft">
-                <h1>Welcome to my <span class="surname">digital</span> playground !</h1>
-                <p>With a passion for creativity and a knack for problem solving, <br>
-                    I blend artistry with technology to create something extraordinary. </p>
+                <h1>Welcome to my <span class="surname">digital</span> playground!</h1>
+                <p>With a passion for creativity and a knack for problem solving,<br>
+                    I blend artistry with technology to create something extraordinary.</p>
                 <h4>I'm a code wizard crafting pixel-perfect magic! 🧙‍♂️</h4>
-                <p>Hi, I'm Rishabh, a Software Developer with a passion for Web Development and  Data Science. I design and develop scalable web applications 
+                <p>Hi, I'm Rishabh, a Software Developer with a passion for Web Development and Data Science. I design and develop scalable web applications
                     and AI-powered solutions that simplify lives and push the boundaries of what's possible.</p>
-                <p>When I'm not busy coding, you can find me exploring the latest advancements in Data Science, experimenting with new algorithms, and sipping on a cup of coffee (my trusty sidekick). I'm excited to collaborate with you and bring your 
-                    most ambitious projects to life with creativity. Let's get along to create something remarkable!</p>
+                <p>When I'm not busy coding, you can find me exploring the latest advancements in Data Science, experimenting with new algorithms, and sipping on a cup of coffee. Let's create something remarkable!</p>
                 <a target="_blank" href="./img/Resume.pdf">Resume →</a>
             </div>
-            <div class="aboutRight">
-                <!-- <img src="pic.png" alt=""> -->
-            </div>
+            <div class="aboutRight"></div>
         </div>
 
+        <!-- SKILLS -->
         <div id="skills">
             <h1>Few <span class="surname">Weapons</span> in my arsenal</h1>
             <div id="circle">
@@ -189,9 +199,7 @@
                     <div class="first">
                         <div class="smcircle"></div>
                     </div>
-                   
                 </div>
-                
                 <div class="stripe str2">
                     <div class="first">
                         <div class="smcircle"></div>
@@ -215,8 +223,8 @@
                         <div class="smcircle"></div>
                     </div>
                     <div class="second">
-                       <h4>Programming</h4>
-                        <h6>Python, Flask, Javascript, Typescript, React, Data Structures & Algorithms</h6> 
+                        <h4>Programming</h4>
+                        <h6>Python, Flask, Javascript, Typescript, React, Data Structures &amp; Algorithms</h6>
                     </div>
                 </div>
                 <div class="stripe str5">
@@ -225,7 +233,7 @@
                     </div>
                     <div class="second">
                         <h4>Operating Systems</h4>
-                        <h6>OS Fundamentals & Architecture, Bash, PowerShell, Microsoft Certified Solutions Expert (MCSE)</h6> 
+                        <h6>OS Fundamentals &amp; Architecture, Bash, PowerShell, Microsoft Certified Solutions Expert (MCSE)</h6>
                     </div>
                 </div>
                 <div class="stripe str6">
@@ -243,7 +251,7 @@
                     </div>
                     <div class="second">
                         <h4>Database Management Systems</h4>
-                        <h6> (RDBMS), ETL , Mongodb, MySQL, Advance Excel, Hadoop</h6>
+                        <h6>(RDBMS), ETL, MongoDB, MySQL, Advanced Excel, Hadoop</h6>
                     </div>
                 </div>
             </div>
@@ -259,17 +267,17 @@
             </div>
         </div>
 
+        <!-- PROJECTS -->
         <div id="projects">
-            <h1><span class="surname">My Work</span></span></h1>
+            <h1><span class="surname">My Work</span></h1>
             <a href="https://career-catalyst-eight.vercel.app/" target="_blank">
                 <div class="box" data-image="./img/app-screengrab.png">
                     <h3>SensAI</h3>
-                    <h4> Next.js, ShadCN, Tailwind CSS, MongoDB, PostgreSQL </h4>
+                    <h4>Next.js, ShadCN, Tailwind CSS, MongoDB, PostgreSQL</h4>
                 </div>
             </a>
-
             <a href="https://job-portal-teal.vercel.app/" target="_blank">
-                <div class="box" data-image="./img/Screenshot(189).png">
+                <div class="box" data-image="./img/Screenshot (189).png">
                     <h3>Jobsy</h3>
                     <h4>React, Express, Node.js, Tailwind, MongoDB</h4>
                 </div>
@@ -277,79 +285,115 @@
             <a href="https://thrift-shop-seven.vercel.app/" target="_blank">
                 <div class="box" data-image="./img/Website.png">
                     <h3>Thrift Shop</h3>
-                    <h4>HTML, CSS, Javascript, React, Node.js, Express.js,MongoDB, Stripe</h4>
+                    <h4>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB, Stripe</h4>
                 </div>
             </a>
-
-              <a href="https://github.com/rish2311/Expense-Tracker" target="_blank">
+            <a href="https://github.com/rish2311/Expense-Tracker" target="_blank">
                 <div class="box" data-image="./img/1.png">
                     <h3>Expense Tracker</h3>
-                    <h4>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB </h4>
+                    <h4>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB</h4>
                 </div>
             </a>
-
-
             <a href="https://github.com/rish2311/Workforce-Tracker" target="_blank">
                 <div class="box" data-image="./img/Tracker.png">
                     <h3>Workforce-Tracker</h3>
-                    <h4>HTML, CSS, Javascript, Typecript, React, Vite, Node.js, Express.js, MongoDB</h4>
+                    <h4>HTML, CSS, Javascript, Typescript, React, Vite, Node.js, Express.js, MongoDB</h4>
                 </div>
             </a>
-            
-            <!-- <a href="https://github.com/Shivani767/weapon_detection" target="_blank">
-                <div class="box" data-image="./img/weapon.png">
-                    <h3>Weapon Detection</h3>
-                    <h4>Python, Machine Learning, Flask, OpenCV, Yolo</h4>
-                </div>
-            </a>
-
-            <a href="https://public.tableau.com/views/AmazonsBusinessAnalysisinIndia/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
-                <div class="box" data-image="./img/Screenshot (192).png">
-                    <h3>Amazon's Business Analysis in India</h3>
-                    <h4>Tableau, MySQL, FIGMA </h4>
-                </div>
-            </a> -->
         </div>
 
+        <!-- GITHUB STATS -->
+        <section id="github-stats">
+            <div class="github-inner">
+                <h1>GitHub <span class="surname">Activity</span></h1>
+                <div class="gh-cards" id="gh-cards">
+                    <div class="gh-card" id="gh-repos">
+                        <span class="gh-value">—</span>
+                        <span class="gh-label">Repositories</span>
+                    </div>
+                    <div class="gh-card" id="gh-stars">
+                        <span class="gh-value">—</span>
+                        <span class="gh-label">Total Stars</span>
+                    </div>
+                    <div class="gh-card" id="gh-followers">
+                        <span class="gh-value">—</span>
+                        <span class="gh-label">Followers</span>
+                    </div>
+                    <div class="gh-card" id="gh-following">
+                        <span class="gh-value">—</span>
+                        <span class="gh-label">Following</span>
+                    </div>
+                </div>
+                <div class="gh-graph-wrap">
+                    <p class="gh-graph-label">Contribution Activity</p>
+                    <img
+                        src="https://ghchart.rshah.org/14cf93/rish2311"
+                        alt="Rishabh Mehrotra GitHub Contribution Graph"
+                        id="gh-graph"
+                        loading="lazy"
+                    />
+                </div>
+                <a class="gh-cta" href="https://github.com/rish2311" target="_blank">
+                    View Full Profile →
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contact">
+            <div class="contact-inner">
+                <div class="contact-header">
+                    <h1>Let's <span class="surname">Connect</span></h1>
+                    <p>Have a project in mind or just want to say hi? Drop me a message.</p>
+                </div>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="from_name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="reply_to" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+                    </div>
+                    <button type="submit" id="contactSubmit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-sending" hidden>Sending…</span>
+                        <span class="btn-sent" hidden>Sent ✓</span>
+                    </button>
+                    <p class="form-error" id="formError" hidden>Something went wrong. Please email me directly at <a href="mailto:mehrotrarishabh100@gmail.com">mehrotrarishabh100@gmail.com</a></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
         <footer>
-            <!-- <div class="leftSection">
-                <h3><a href="https://unstop.com/u/shivabha6825" target="_blank">Unstop</a></h3>
-                <h3><a href="https://unstop.com/mentor/ShivaniBhandari?ref=4Gv1ufF"
-                        target="_blank">Unstop Mentor</a></h3>
-            </div> -->
             <div class="midSection">
                 <div class="firstName">
-                    <h1>R</h1>
-                    <h1>I</h1>
-                    <h1>S</h1>
-                    <h1>H</h1>
-                    <h1>A</h1>
-                    <h1>B</h1>
-                    <h1>H</h1>
+                    <h1>R</h1><h1>I</h1><h1>S</h1><h1>H</h1><h1>A</h1><h1>B</h1><h1>H</h1>
                 </div>
                 <div class="lastName">
-                    <h1>M</h1>
-                    <h1>E</h1>
-                    <h1>H</h1>
-                    <h1>R</h1>
-                    <h1>O</h1>
-                    <h1>T</h1>
-                    <h1>R</h1>
-                    <h1>A</h1>
+                    <h1>M</h1><h1>E</h1><h1>H</h1><h1>R</h1><h1>O</h1><h1>T</h1><h1>R</h1><h1>A</h1>
                 </div>
             </div>
             <div class="rightSection">
-                <a href="tel:8708078442"><img src="./img/phone.png" href alt="7530815555"></a>
+                <a href="tel:8708078442"><img src="./img/phone.png" alt="Phone"></a>
                 <a href="mailto:mehrotrarishabh100@gmail.com"><img src="./img/gmail.png" alt="mehrotrarishabh100@gmail.com"></a>
                 <a href="https://github.com/rish2311" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/rishabhmehrotra-/" target="_blank"><img src="./img/linkedin.png"
-                        alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/rishabhmehrotra-/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
             </div>
         </footer>
 
-
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
@@ -358,6 +402,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- EmailJS — add your Public Key below. Sign up free at emailjs.com -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
